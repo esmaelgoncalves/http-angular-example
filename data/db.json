@@ -1,0 +1,24 @@
+{
+  "livros": [
+    {
+      "nome": "As Crônicas de Gelo e Fogo - Livro 1 - A Guerra dos Tronos",
+      "id": 1
+    },
+    {
+      "nome": "O Senhor dos Anéis I - A Sociedade do Anel",
+      "id": 2
+    },
+    {
+      "nome": "O Hobbit",
+      "id": 3
+    },
+    {
+      "nome": "O Cavaleiro dos Sete Reinos",
+      "id": 4
+    },
+    {
+      "nome": "Dever de Capitão",
+      "id": 5
+    }
+  ]
+}
