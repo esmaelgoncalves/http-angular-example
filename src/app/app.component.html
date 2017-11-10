@@ -4,9 +4,17 @@
     <h1>Livros <small>Cadastro de Livros</small></h1>
   </div>
 
+  <div class="alert alert-danger" *ngIf="hasErro">
+    <strong>Erro!</strong> {{ mensagem }}
+  </div>
+
+  <div class="alert alert-success" *ngIf="isSucesso">
+    <strong>Sucesso!</strong> {{ mensagem }}
+  </div>
+
   <div class="form-group">
     <label>Nome</label>
-    <input type="text" class="form-control" #nome>
+    <input type="text" class="form-control" #nome (focus)="limparMensagens()">
   </div>
 
   <button type="button" class="btn btn-primary" (click)="adicionar(nome.value); nome.value = ''">Adicionar</button>

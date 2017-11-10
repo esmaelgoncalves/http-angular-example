@@ -21,7 +21,7 @@ export class LivroService {
       .toPromise()
       .then(response => response.json())
       .catch(erro => {
-        return Promise.reject(`Erro ao adicionar livro ${livro}`);
+        return Promise.reject(`Erro ao adicionar livro: ${livro.nome}`);
       });
   }
 
